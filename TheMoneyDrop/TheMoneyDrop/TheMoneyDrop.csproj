@@ -50,6 +50,8 @@
     <Compile Include="GameView.Designer.cs">
       <DependentUpon>GameView.cs</DependentUpon>
     </Compile>
+    <Compile Include="MoneydropController.cs" />
+    <Compile Include="MoneydropModel.cs" />
     <Compile Include="MoneydropView.cs">
       <SubType>UserControl</SubType>
     </Compile>
