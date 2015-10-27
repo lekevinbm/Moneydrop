@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheMoneyDrop
 {
-  class TrapdoorModel
+  public class TrapdoorModel
   {
     private float inzet;
     private bool valtHij;

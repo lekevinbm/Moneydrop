@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameController.cs" />
     <Compile Include="GameView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +69,9 @@
     <Compile Include="TrapdoorView.Designer.cs">
       <DependentUpon>TrapdoorView.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GameView.resx">
+      <DependentUpon>GameView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MoneydropView.resx">
       <DependentUpon>MoneydropView.cs</DependentUpon>
     </EmbeddedResource>

@@ -28,18 +28,32 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.SuspendLayout();
-      // 
-      // MoneydropView
-      // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.Name = "MoneydropView";
-      this.Load += new System.EventHandler(this.MoneydropView_Load);
-      this.ResumeLayout(false);
+            this.btnVallen = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnVallen
+            // 
+            this.btnVallen.Location = new System.Drawing.Point(107, 197);
+            this.btnVallen.Name = "btnVallen";
+            this.btnVallen.Size = new System.Drawing.Size(75, 23);
+            this.btnVallen.TabIndex = 0;
+            this.btnVallen.Text = "Vallen";
+            this.btnVallen.UseVisualStyleBackColor = true;
+            // 
+            // MoneydropView
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnVallen);
+            this.Name = "MoneydropView";
+            this.Size = new System.Drawing.Size(286, 252);
+            this.Load += new System.EventHandler(this.MoneydropView_Load);
+            this.ResumeLayout(false);
 
     }
 
-    #endregion
-  }
+        #endregion
+
+        private System.Windows.Forms.Button btnVallen;
+    }
 }

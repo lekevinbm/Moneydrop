@@ -12,29 +12,44 @@ namespace TheMoneyDrop
 {
   public partial class TrapdoorView : UserControl
   {
-    private TrapdoorController controller;
-    private TrapdoorModel model;
+    private TrapdoorController _controller;
     
-    public TrapdoorView()
+    
+    public TrapdoorView(TrapdoorController controller)
     {
-      InitializeComponent();
-    }
+     
+
+      _controller = controller;
+            InitializeComponent();
+        }
 
     private void label1_Click(object sender, EventArgs e)
     {
-
-    }
+            _controller.model.Inzet = Convert.ToSingle(txtInzet.Text);
+        }
 
     private void txtInzet_TextChanged(object sender, EventArgs e)
     {
-      model.Inzet = Convert.ToSingle(txtInzet.Text);
-
+           
+           
     }
 
     public void UpdateUI()
     {
-      lblIngezet.Text = model.Inzet.ToString();
+      lblIngezet.Text = _controller.model.Inzet.ToString();
 ;
     }
-  }
+
+        private void TrapdoorView_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInzetten_Click(object sender, EventArgs e)
+        {
+            _controller.model.Inzet = Convert.ToSingle(txtInzet.Text);
+            UpdateUI();
+
+        }
+    }
 }
