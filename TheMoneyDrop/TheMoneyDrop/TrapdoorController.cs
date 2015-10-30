@@ -14,17 +14,26 @@ namespace TheMoneyDrop
 
         public TrapdoorController()
         {
-            // Maak een instantie van de view
-            // Geef een de huidige instantie (= controller = this) mee als argument
             view = new TrapdoorView(this);
 
-            // Maak een nieuwe instantie van het model aan
             model = new TrapdoorModel();
         }
+        public void Drop()
+        {
+                view.UpdateUIAfterDrop();
+        }
 
+        public void toggleEnabled(bool value)
+        {
+            view.updateTrapdoorButton(value);
+        }
 
-
-        
+        public void trapdoorReset()
+        {
+          model.Inzet = 0;
+          model.ValtHij = true;
+          view.resetUI();
+        }
 
         public TrapdoorView getView()
         {

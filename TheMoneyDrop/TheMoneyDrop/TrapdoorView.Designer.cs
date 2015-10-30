@@ -39,9 +39,9 @@
             this.lblTrapdoor.AutoSize = true;
             this.lblTrapdoor.Location = new System.Drawing.Point(44, 19);
             this.lblTrapdoor.Name = "lblTrapdoor";
-            this.lblTrapdoor.Size = new System.Drawing.Size(60, 13);
+            this.lblTrapdoor.Size = new System.Drawing.Size(50, 13);
             this.lblTrapdoor.TabIndex = 0;
-            this.lblTrapdoor.Text = "Trapdoor #";
+            this.lblTrapdoor.Text = "Trapdoor";
             this.lblTrapdoor.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblIngezet
@@ -53,6 +53,7 @@
             this.lblIngezet.TabIndex = 1;
             this.lblIngezet.Text = "0";
             this.lblIngezet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblIngezet.Click += new System.EventHandler(this.lblIngezet_Click);
             // 
             // txtInzet
             // 
@@ -60,10 +61,13 @@
             this.txtInzet.Name = "txtInzet";
             this.txtInzet.Size = new System.Drawing.Size(100, 20);
             this.txtInzet.TabIndex = 2;
+            this.txtInzet.Text = "0";
+            this.txtInzet.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtInzet.TextChanged += new System.EventHandler(this.txtInzet_TextChanged);
             // 
             // btnInzetten
             // 
+            this.btnInzetten.Enabled = false;
             this.btnInzetten.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInzetten.Location = new System.Drawing.Point(41, 121);
             this.btnInzetten.Name = "btnInzetten";
